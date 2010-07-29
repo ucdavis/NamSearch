@@ -127,11 +127,31 @@
     <Compile Include="RouteConfigurator.asax.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\jqtouch.min.css" />
     <Content Include="Content\telerik.common.css" />
     <Content Include="Content\telerik.vista.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\jqtouch.js" />
+    <Content Include="Scripts\jqtouch.min.js" />
+    <Content Include="Scripts\jqtouch.transitions.js" />
     <Content Include="Scripts\xVal.jquery.validate.js" />
+    <Content Include="Themes\jqt\img\back_button.png" />
+    <Content Include="Themes\jqt\img\back_button_clicked.png" />
+    <Content Include="Themes\jqt\img\button.png" />
+    <Content Include="Themes\jqt\img\button_clicked.png" />
+    <Content Include="Themes\jqt\img\chevron.png" />
+    <Content Include="Themes\jqt\img\chevron_circle.png" />
+    <Content Include="Themes\jqt\img\grayButton.png" />
+    <Content Include="Themes\jqt\img\loading.gif" />
+    <Content Include="Themes\jqt\img\on_off.png" />
+    <Content Include="Themes\jqt\img\rowhead.png" />
+    <Content Include="Themes\jqt\img\toggle.png" />
+    <Content Include="Themes\jqt\img\toggleOn.png" />
+    <Content Include="Themes\jqt\img\toolbar.png" />
+    <Content Include="Themes\jqt\img\whiteButton.png" />
+    <Content Include="Themes\jqt\theme.css" />
+    <Content Include="Themes\jqt\theme.min.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

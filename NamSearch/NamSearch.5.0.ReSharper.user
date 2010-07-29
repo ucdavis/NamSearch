@@ -9,23 +9,20 @@
   <RecentFiles>
     <RecentFiles>
       <File id="A9271788-6304-464B-B61A-3B472918EECE/f:ComponentRegistrar.asax.cs" caret="949" fromTop="22" />
-      <File id="A9271788-6304-464B-B61A-3B472918EECE/d:Views/d:Shared/f:Site.Master" caret="0" fromTop="0" />
       <File id="A9271788-6304-464B-B61A-3B472918EECE/d:Views/d:Account/f:LogOn.aspx" caret="470" fromTop="14" />
       <File id="A9271788-6304-464B-B61A-3B472918EECE/d:Controllers/f:ApplicationController.cs" caret="57" fromTop="1" />
       <File id="A9271788-6304-464B-B61A-3B472918EECE/d:Controllers/f:AccountController.cs" caret="486" fromTop="15" />
       <File id="8B02917A-0C18-424E-A271-9C4B8532E18B/d:Controllers/f:HomeControllerTest.cs" caret="431" fromTop="17" />
-      <File id="A9271788-6304-464B-B61A-3B472918EECE/d:Controllers/f:HomeController.cs" caret="224" fromTop="8" />
       <File id="A9271788-6304-464B-B61A-3B472918EECE/f:Web.config" caret="1548" fromTop="11" />
-      <File id="7E19C993-D8FA-42E3-8D50-29DCFC1C78C1/f:Class1.cs" caret="158" fromTop="8" />
-      <File id="A9271788-6304-464B-B61A-3B472918EECE/f:Global.asax.cs" caret="1073" fromTop="17" />
+      <File id="A9271788-6304-464B-B61A-3B472918EECE/f:Global.asax.cs" caret="1223" fromTop="17" />
+      <File id="7E19C993-D8FA-42E3-8D50-29DCFC1C78C1/d:Domain/f:DataNam.cs" caret="466" fromTop="11" />
+      <File id="A9271788-6304-464B-B61A-3B472918EECE/d:Controllers/f:HomeController.cs" caret="124" fromTop="4" />
+      <File id="7E19C993-D8FA-42E3-8D50-29DCFC1C78C1/d:Mappings/f:DataNamMap.cs" caret="302" fromTop="10" />
+      <File id="A9271788-6304-464B-B61A-3B472918EECE/d:Views/d:Shared/f:Site.Master" caret="1775" fromTop="38" />
     </RecentFiles>
     <RecentEdits>
-      <File id="A9271788-6304-464B-B61A-3B472918EECE/f:Global.asax.cs" caret="781" fromTop="18" />
-      <File id="A9271788-6304-464B-B61A-3B472918EECE/f:Global.asax.cs" caret="1768" fromTop="52" />
-      <File id="A9271788-6304-464B-B61A-3B472918EECE/f:Global.asax.cs" caret="1596" fromTop="42" />
-      <File id="A9271788-6304-464B-B61A-3B472918EECE/f:Global.asax.cs" caret="1768" fromTop="28" />
-      <File id="A9271788-6304-464B-B61A-3B472918EECE/f:Global.asax.cs" caret="1768" fromTop="12" />
-      <File id="A9271788-6304-464B-B61A-3B472918EECE/d:Views/d:Shared/f:Site.Master" caret="2713" fromTop="56" />
+      <File id="A9271788-6304-464B-B61A-3B472918EECE/f:Global.asax.cs" caret="1860" fromTop="28" />
+      <File id="A9271788-6304-464B-B61A-3B472918EECE/f:Global.asax.cs" caret="1860" fromTop="12" />
       <File id="A9271788-6304-464B-B61A-3B472918EECE/f:Web.config" caret="3753" fromTop="58" />
       <File id="A9271788-6304-464B-B61A-3B472918EECE/f:Web.config" caret="1646" fromTop="32" />
       <File id="A9271788-6304-464B-B61A-3B472918EECE/d:Views/d:Account/f:LogOn.aspx" caret="470" fromTop="14" />
@@ -35,9 +32,25 @@
       <File id="A9271788-6304-464B-B61A-3B472918EECE/d:Controllers/f:AccountController.cs" caret="142" fromTop="4" />
       <File id="A9271788-6304-464B-B61A-3B472918EECE/f:Web.config" caret="2485" fromTop="31" />
       <File id="A9271788-6304-464B-B61A-3B472918EECE/f:Web.config" caret="2823" fromTop="35" />
-      <File id="A9271788-6304-464B-B61A-3B472918EECE/d:Controllers/f:HomeController.cs" caret="224" fromTop="8" />
       <File id="A9271788-6304-464B-B61A-3B472918EECE/f:Web.config" caret="1469" fromTop="7" />
-      <File id="A9271788-6304-464B-B61A-3B472918EECE/f:Global.asax.cs" caret="1143" fromTop="17" />
+      <File id="A9271788-6304-464B-B61A-3B472918EECE/f:Global.asax.cs" caret="1193" fromTop="17" />
+      <File id="7E19C993-D8FA-42E3-8D50-29DCFC1C78C1/d:Domain/f:DataNam.cs" caret="465" fromTop="11" />
+      <File id="7E19C993-D8FA-42E3-8D50-29DCFC1C78C1/d:Domain/f:DataNam.cs" caret="475" fromTop="11" />
+      <File id="7E19C993-D8FA-42E3-8D50-29DCFC1C78C1/d:Mappings/f:DataNamMap.cs" caret="316" fromTop="9" />
+      <File id="7E19C993-D8FA-42E3-8D50-29DCFC1C78C1/d:Mappings/f:DataNamMap.cs" caret="30" fromTop="0" />
+      <File id="7E19C993-D8FA-42E3-8D50-29DCFC1C78C1/d:Mappings/f:DataNamMap.cs" caret="253" fromTop="8" />
+      <File id="A9271788-6304-464B-B61A-3B472918EECE/d:Controllers/f:HomeController.cs" caret="389" fromTop="15" />
+      <File id="A9271788-6304-464B-B61A-3B472918EECE/d:Controllers/f:HomeController.cs" caret="92" fromTop="6" />
+      <File id="A9271788-6304-464B-B61A-3B472918EECE/d:Controllers/f:HomeController.cs" caret="0" fromTop="0" />
+      <File id="7E19C993-D8FA-42E3-8D50-29DCFC1C78C1/d:Mappings/f:DataNamMap.cs" caret="519" fromTop="17" />
+      <File id="A9271788-6304-464B-B61A-3B472918EECE/d:Views/d:Shared/f:Site.Master" caret="392" fromTop="6" />
+      <File id="A9271788-6304-464B-B61A-3B472918EECE/d:Views/d:Shared/f:Site.Master" caret="1030" fromTop="17" />
+      <File id="A9271788-6304-464B-B61A-3B472918EECE/d:Views/d:Shared/f:Site.Master" caret="1891" fromTop="35" />
+      <File id="A9271788-6304-464B-B61A-3B472918EECE/d:Views/d:Shared/f:Site.Master" caret="1779" fromTop="36" />
+      <File id="A9271788-6304-464B-B61A-3B472918EECE/d:Views/d:Shared/f:Site.Master" caret="1779" fromTop="35" />
+      <File id="A9271788-6304-464B-B61A-3B472918EECE/d:Views/d:Shared/f:Site.Master" caret="550" fromTop="9" />
+      <File id="A9271788-6304-464B-B61A-3B472918EECE/d:Views/d:Shared/f:Site.Master" caret="1346" fromTop="26" />
+      <File id="A9271788-6304-464B-B61A-3B472918EECE/d:Views/d:Shared/f:Site.Master" caret="1775" fromTop="38" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -59,13 +72,73 @@
       <Item value="Data" priority="0" />
       <Item value="NHibernate" priority="0" />
       <Item value="NHibernateSessionConfiguration`0" priority="0" />
-      <Item value="Class1`0" priority="0" />
+      <Item value="Class1`0" priority="3" />
+      <Item value="Assembly`0" priority="0" />
+      <Item value="typeof" priority="0" />
+      <Item value="string" priority="1" />
+      <Item value="virtual" priority="0" />
+      <Item value="FluentNHibernate" priority="0" />
+      <Item value="Mapping" priority="0" />
+      <Item value="ClassMap" priority="0" />
+      <Item value="ctor" priority="0" />
+      <Item value="Table`0" priority="0" />
+      <Item value="Map`0" priority="5" />
+      <Item value="Id`1" priority="0" />
+      <Item value="override" priority="0" />
+      <Item value="Properties" priority="0" />
+      <Item value="ReadOnly`0" priority="0" />
+      <Item value="Cache" priority="0" />
+      <Item value="var" priority="0" />
+      <Item value="Repository" priority="0" />
+      <Item value="References`1" priority="0" />
+      <Item value="Url" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@UCDArch.Data.NHibernate.NHibernateSessionConfiguration">
       <Item value="Mappings`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@UCDArch.Data.NHibernate.NHibernateSessionConfiguration+Mappings">
       <Item value="UseAutoMappings`2" priority="0" />
+      <Item value="UseFluentMappings`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Reflection.Assembly">
+      <Item value="GetAssembly`0" priority="1" />
+      <Item value="GetEntryAssembly`0" priority="0" />
+      <Item value="LoadFrom`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:NamSearch.Core.Domain.DataNam">
+      <Item value="NamNumber" priority="0" />
+      <Item value="Department" priority="0" />
+      <Item value="Status" priority="0" />
+      <Item value="Building" priority="1" />
+      <Item value="Room" priority="0" />
+      <Item value="Vlan" priority="0" />
+      <Item value="Id" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Mapping.IdentityPart">
+      <Item value="GeneratedBy" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Mapping.IdentityGenerationStrategyBuilder`1">
+      <Item value="Assigned`0" priority="0" />
+      <Item value="Guid`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:UCDArch.Core.PersistanceSupport.IRepository">
+      <Item value="OfType`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:UCDArch.Core.PersistanceSupport.IRepository`1">
+      <Item value="Queryable" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.IQueryable`1">
+      <Item value="ToList`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Mapping.ManyToOnePart`1">
+      <Item value="Cascade" priority="0" />
+      <Item value="LazyLoad`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:FluentNHibernate.Mapping.CascadeExpression`1">
+      <Item value="All`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Web.Mvc.UrlHelper">
+      <Item value="Script`0" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>
