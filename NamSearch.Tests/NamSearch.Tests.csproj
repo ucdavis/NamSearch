@@ -52,6 +52,7 @@
     <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
+    <Reference Include="UCDArch.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=667f3cb07abadf4b, processorArchitecture=MSIL" />
     <Reference Include="UCDArch.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=667f3cb07abadf4b, processorArchitecture=MSIL" />
   </ItemGroup>
   <ItemGroup>
@@ -62,6 +63,10 @@
     <Content Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\NamSearch.Core\NamSearch.Core.csproj">
+      <Project>{7E19C993-D8FA-42E3-8D50-29DCFC1C78C1}</Project>
+      <Name>NamSearch.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NamSearch\NamSearch.csproj">
       <Project>{A9271788-6304-464B-B61A-3B472918EECE}</Project>
       <Name>NamSearch</Name>

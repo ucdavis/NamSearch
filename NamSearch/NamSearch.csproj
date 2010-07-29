@@ -152,6 +152,10 @@
     <Content Include="Themes\jqt\img\whiteButton.png" />
     <Content Include="Themes\jqt\theme.css" />
     <Content Include="Themes\jqt\theme.min.css" />
+    <Content Include="Views\Home\Buildings.ascx" />
+    <Content Include="Views\Home\Info.ascx" />
+    <Content Include="Views\Home\NamsByBuilding.ascx" />
+    <Content Include="Views\Shared\ToolbarWithBack.ascx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
