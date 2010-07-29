@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using UCDArch.Web.Attributes;
 
 namespace NamSearch.Controllers
 {
-    [HandleError]
+    [HandleTransactionsManually]
     public class HomeController : ApplicationController
     {
         public ActionResult Index()

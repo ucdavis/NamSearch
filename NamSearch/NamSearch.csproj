@@ -165,6 +165,12 @@
     <Folder Include="Images\" />
     <Folder Include="Models\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NamSearch.Core\NamSearch.Core.csproj">
+      <Project>{7E19C993-D8FA-42E3-8D50-29DCFC1C78C1}</Project>
+      <Name>NamSearch.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

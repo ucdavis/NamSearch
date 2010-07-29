@@ -7,9 +7,13 @@ using Castle.Windsor;
 using Microsoft.Practices.ServiceLocation;
 using MvcContrib.Castle;
 using NamSearch.Controllers;
+using NamSearch.Core;
+using UCDArch.Data.NHibernate;
 using UCDArch.Web.IoC;
 using UCDArch.Web.ModelBinder;
 using UCDArch.Web.Validator;
+using System.Reflection;
+using NamSearch.Core.Domain;
 
 namespace NamSearch
 {
@@ -31,6 +35,8 @@ namespace NamSearch
 
             ModelBinders.Binders.DefaultBinder = new UCDArchModelBinder();
 
+            NHibernateSessionConfiguration.Mappings.UseFluentMappings(Assembly.GetAssembly(typeof (DataNam)));
+            
             IWindsorContainer container = InitializeServiceLocator();
         }
 
