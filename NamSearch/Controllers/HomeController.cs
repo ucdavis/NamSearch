@@ -66,5 +66,23 @@ namespace NamSearch.Controllers
 
             return PartialView(nams.ToList());
         }
+
+        public ActionResult Vlans()
+        {
+            var vlans = _dataNamRepository.Queryable.OrderBy(x => x.Vlan).Select(x => x.Vlan).Distinct();
+
+            return PartialView(vlans.ToList());
+
+        }
+
+        public ActionResult NamsByVlan(string name)
+        {
+            var nams =
+                _dataNamRepository.Queryable
+                                    .Where(x => x.Vlan == name)
+                                    .OrderBy(x => x.Vlan);
+
+            return PartialView(nams.ToList());
+        }
     }
 }

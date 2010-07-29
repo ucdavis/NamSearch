@@ -157,6 +157,8 @@
     <Content Include="Views\Home\Info.ascx" />
     <Content Include="Views\Home\NamsByBuilding.ascx" />
     <Content Include="Views\Home\NamsByDepartment.ascx" />
+    <Content Include="Views\Home\NamsByVlan.ascx" />
+    <Content Include="Views\Home\Vlans.ascx" />
     <Content Include="Views\Shared\ToolbarWithBack.ascx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
