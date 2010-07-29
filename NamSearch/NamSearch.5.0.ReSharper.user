@@ -1,0 +1,34 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="A9271788-6304-464B-B61A-3B472918EECE/d:Controllers/f:HomeController.cs" caret="180" fromTop="8" />
+      <File id="A9271788-6304-464B-B61A-3B472918EECE/f:Global.asax.cs" caret="1623" fromTop="12" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="A9271788-6304-464B-B61A-3B472918EECE/f:Global.asax.cs" caret="726" fromTop="18" />
+      <File id="A9271788-6304-464B-B61A-3B472918EECE/f:Global.asax.cs" caret="912" fromTop="29" />
+      <File id="A9271788-6304-464B-B61A-3B472918EECE/f:Global.asax.cs" caret="1623" fromTop="52" />
+      <File id="A9271788-6304-464B-B61A-3B472918EECE/f:Global.asax.cs" caret="1451" fromTop="42" />
+      <File id="A9271788-6304-464B-B61A-3B472918EECE/f:Global.asax.cs" caret="1623" fromTop="28" />
+      <File id="A9271788-6304-464B-B61A-3B472918EECE/f:Global.asax.cs" caret="1623" fromTop="12" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

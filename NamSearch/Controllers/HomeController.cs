@@ -7,7 +7,7 @@ using System.Web.Mvc;
 namespace NamSearch.Controllers
 {
     [HandleError]
-    public class HomeController : Controller
+    public class HomeController : ApplicationController
     {
         public ActionResult Index()
         {
