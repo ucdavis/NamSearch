@@ -34,12 +34,30 @@ namespace NamSearch.Controllers
 
         public ActionResult Buildings()
         {
-            var buildings = _dataNamRepository.Queryable.OrderBy(x=>x.Department).Select(x => x.Department).Distinct();
+            var buildings = _dataNamRepository.Queryable.OrderBy(x=>x.Building).Select(x => x.Building).Distinct();
             
             return PartialView(buildings.ToList());
         }
 
         public ActionResult NamsByBuilding(string name)
+        {
+            var nams =
+                _dataNamRepository.Queryable
+                                    .Where(x => x.Building == name)
+                                    .OrderBy(x => x.Building);
+
+            return PartialView(nams.ToList());
+        }
+
+        public ActionResult Departments()
+        {
+            var departments = _dataNamRepository.Queryable.OrderBy(x => x.Department).Select(x => x.Department).Distinct();
+
+            return PartialView(departments.ToList());
+
+        }
+
+        public ActionResult NamsByDepartment(string name)
         {
             var nams =
                 _dataNamRepository.Queryable

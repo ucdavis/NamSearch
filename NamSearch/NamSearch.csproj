@@ -153,8 +153,10 @@
     <Content Include="Themes\jqt\theme.css" />
     <Content Include="Themes\jqt\theme.min.css" />
     <Content Include="Views\Home\Buildings.ascx" />
+    <Content Include="Views\Home\Departments.ascx" />
     <Content Include="Views\Home\Info.ascx" />
     <Content Include="Views\Home\NamsByBuilding.ascx" />
+    <Content Include="Views\Home\NamsByDepartment.ascx" />
     <Content Include="Views\Shared\ToolbarWithBack.ascx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

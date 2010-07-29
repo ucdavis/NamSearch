@@ -12,8 +12,10 @@
             <li class="arrow">
                 <%: Html.ActionLink<HomeController>(x=>x.Buildings(), "Search By Building") %>
             </li>
+            <li class="arrow">
+                <%: Html.ActionLink<HomeController>(x=>x.Departments(), "Search By Department") %>
+            </li>            
             <li class="arrow"><a href="#searchNAM">Search By NAM Number (TODO)</a></li>
-            <li class="arrow"><a href="#searchDepartment">Search By Department (TODO)</a></li>
             <li class="arrow"><a href="#searchVLAN">Search By VLAN (TODO)</a></li>
             <li class="arrow"><%: Html.ActionLink<HomeController>(x=>x.Info(), "About") %></li>
         </ul>    
