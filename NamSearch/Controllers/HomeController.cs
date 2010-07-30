@@ -91,13 +91,20 @@ namespace NamSearch.Controllers
             return PartialView();
         }
 
-        public ActionResult SearchByNumber(string number)
+        public ActionResult NamsByNumber(string number)
         {
             var nams = _dataNamRepository.Queryable
                 .Where(x => x.NamNumber.Contains(number))
                 .OrderBy(x => x.NamNumber);
 
             return PartialView(nams.ToList());
+        }
+
+        public ActionResult DisplayNam(Guid id)
+        {
+            var nam = _dataNamRepository.GetById(id);
+
+            return View(nam);
         }
     }
 }
