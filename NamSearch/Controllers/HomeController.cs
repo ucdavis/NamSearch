@@ -6,6 +6,7 @@ using System;
 
 namespace NamSearch.Controllers
 {
+    [Authorize]
     public class HomeController : ApplicationController
     {
         private readonly IRepositoryWithTypedId<DataNam, Guid> _dataNamRepository;
