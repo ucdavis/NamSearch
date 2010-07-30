@@ -17,7 +17,7 @@ namespace NamSearch.Controllers
         [BypassAntiForgeryToken]
         public ActionResult LogOn(string returnUrl, string pass)
         {
-            if (pass == "caes")
+            if (pass.ToLower() == "caes")
             {
                 FormsAuthentication.SetAuthCookie("admin", false);
                 return RedirectToAction("Index", "Home");
