@@ -84,5 +84,19 @@ namespace NamSearch.Controllers
 
             return PartialView(nams.ToList());
         }
+
+        public ActionResult SearchByNamNumber()
+        {
+            return PartialView();
+        }
+
+        public ActionResult SearchByNumber(string number)
+        {
+            var nams = _dataNamRepository.Queryable
+                .Where(x => x.NamNumber.Contains(number))
+                .OrderBy(x => x.NamNumber);
+
+            return PartialView(nams.ToList());
+        }
     }
 }

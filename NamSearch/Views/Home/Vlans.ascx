@@ -27,7 +27,4 @@
 
         <% } %>
     </ul>
-    
-    <h2 class="info">This application was developed by the awesome Scott Kirkland</h2>
-
 </div>

@@ -18,8 +18,12 @@
             <li class="arrow">
                 <%: Html.ActionLink<HomeController>(x=>x.Vlans(), "Search By Vlan") %>
             </li>
-            <li class="arrow"><a href="#searchNAM">Search By NAM Number (TODO)</a></li>
-            <li class="arrow"><%: Html.ActionLink<HomeController>(x=>x.Info(), "About") %></li>
+            <li class="arrow">
+                <%: Html.ActionLink<HomeController>(x=>x.SearchByNamNumber(), "Search By NAM Number") %>
+            </li>
+            <li class="arrow slideup">
+                <%: Html.ActionLink<HomeController>(x=>x.Info(), "About") %>
+            </li>
         </ul>    
     </div>
 
