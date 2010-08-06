@@ -3,6 +3,7 @@ using UCDArch.Core.CommonValidator;
 using UCDArch.Core.NHibernateValidator.CommonValidatorAdapter;
 using UCDArch.Core.PersistanceSupport;
 using UCDArch.Data.NHibernate;
+using NamSearch.Services;
 
 namespace NamSearch
 {
@@ -13,6 +14,8 @@ namespace NamSearch
             //Add your components here
             container.AddComponent("validator", typeof(IValidator), typeof(Validator));
             container.AddComponent("dbContext", typeof(IDbContext), typeof(DbContext));
+
+            container.AddComponent("dataNamQueryService", typeof (IDataNamQueryService), typeof (DataNamQueryService));
 
             AddRepositoriesTo(container);
         }

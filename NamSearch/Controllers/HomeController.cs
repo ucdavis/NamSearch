@@ -4,6 +4,7 @@ using NamSearch.Core.Domain;
 using UCDArch.Core.PersistanceSupport;
 using System;
 using UCDArch.Web.Attributes;
+using NamSearch.Services;
 
 namespace NamSearch.Controllers
 {
@@ -11,10 +12,12 @@ namespace NamSearch.Controllers
     public class HomeController : ApplicationController
     {
         private readonly IRepositoryWithTypedId<DataNam, Guid> _dataNamRepository;
+        private readonly IDataNamQueryService _dataNamQueryService;
 
-        public HomeController(IRepositoryWithTypedId<DataNam, Guid> dataNamRepository)
+        public HomeController(IRepositoryWithTypedId<DataNam, Guid> dataNamRepository, IDataNamQueryService dataNamQueryService)
         {
             _dataNamRepository = dataNamRepository;
+            _dataNamQueryService = dataNamQueryService;
         }
 
         [HandleTransactionsManually]
@@ -39,7 +42,7 @@ namespace NamSearch.Controllers
 
         public ActionResult Buildings()
         {
-            var buildings = _dataNamRepository.Queryable.OrderBy(x=>x.Building).Select(x => x.Building).Distinct();
+            var buildings = _dataNamQueryService.GetBuildings();
             
             return PartialView(buildings.ToList());
         }
@@ -56,7 +59,7 @@ namespace NamSearch.Controllers
 
         public ActionResult Departments()
         {
-            var departments = _dataNamRepository.Queryable.OrderBy(x => x.Department).Select(x => x.Department).Distinct();
+            var departments = _dataNamQueryService.GetDepartments();
 
             return PartialView(departments.ToList());
 
@@ -74,7 +77,7 @@ namespace NamSearch.Controllers
 
         public ActionResult Vlans()
         {
-            var vlans = _dataNamRepository.Queryable.OrderBy(x => x.Vlan).Select(x => x.Vlan).Distinct();
+            var vlans = _dataNamQueryService.GetVlans();
 
             return PartialView(vlans.ToList());
 
