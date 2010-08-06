@@ -17,6 +17,8 @@ namespace NamSearch.Core.Mappings
             Map(x => x.Building);
             Map(x => x.Room);
             Map(x => x.Vlan);
+
+            Cache.ReadOnly();
         }
     }
 }

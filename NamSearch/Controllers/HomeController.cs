@@ -3,6 +3,7 @@ using System.Web.Mvc;
 using NamSearch.Core.Domain;
 using UCDArch.Core.PersistanceSupport;
 using System;
+using UCDArch.Web.Attributes;
 
 namespace NamSearch.Controllers
 {
@@ -16,6 +17,7 @@ namespace NamSearch.Controllers
             _dataNamRepository = dataNamRepository;
         }
 
+        [HandleTransactionsManually]
         public ActionResult Index()
         {
             ViewData["Message"] = "Welcome to ASP.NET MVC!";
@@ -23,11 +25,13 @@ namespace NamSearch.Controllers
             return View();
         }
 
+        [HandleTransactionsManually]
         public ActionResult Info()
         {
             return PartialView("Info");
         }
 
+        [HandleTransactionsManually]
         public ActionResult About()
         {
             return View();
@@ -86,6 +90,7 @@ namespace NamSearch.Controllers
             return PartialView(nams.ToList());
         }
 
+        [HandleTransactionsManually]
         public ActionResult SearchByNamNumber()
         {
             return PartialView();
