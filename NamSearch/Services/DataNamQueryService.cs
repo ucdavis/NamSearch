@@ -23,36 +23,19 @@ namespace NamSearch.Services
             _dataNamRepository = dataNamRepository;
         }
 
-        private INHibernateQueryable<DataNam> DataNamQueryable
-        {
-            get
-            {
-                return _dataNamRepository.Queryable.NhQueryable();
-            }
-        }
-
         public IQueryable<string> GetBuildings()
         {
-            var query = DataNamQueryable;
-            query.QueryOptions.SetCachable(true);
-
-            return query.OrderBy(x => x.Building).Select(x => x.Building).Distinct();
+            return _dataNamRepository.Queryable.Cache().OrderBy(x => x.Building).Select(x => x.Building).Distinct();
         }
 
         public IQueryable<string> GetDepartments()
         {
-            var query = DataNamQueryable;
-            query.QueryOptions.SetCachable(true);
-
-            return query.OrderBy(x => x.Department).Select(x => x.Department).Distinct();
+            return _dataNamRepository.Queryable.Cache().OrderBy(x => x.Department).Select(x => x.Department).Distinct();
         }
 
         public IQueryable<string> GetVlans()
         {
-            var query = DataNamQueryable;
-            query.QueryOptions.SetCachable(true);
-
-            return query.OrderBy(x => x.Vlan).Select(x => x.Vlan).Distinct();
+            return _dataNamRepository.Queryable.Cache().OrderBy(x => x.Vlan).Select(x => x.Vlan).Distinct();
         }
     }
 }
