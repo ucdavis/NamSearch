@@ -2,5 +2,5 @@
 
 <div id="about">
     <% Html.RenderPartial("ToolbarWithBack"); %>
-    <h2 class="info">This application was developed by the awesome Scott Kirkland</h2>
+    <h2 class="info">This application was developed by the awesome Scott Kirkland.</h2>
 </div>
