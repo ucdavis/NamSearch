@@ -184,9 +184,7 @@
     <Content Include="Views\Home\NamsByNumber.aspx" />
     <Content Include="Views\Home\NamsByVlan.aspx" />
     <Content Include="Views\Home\SearchByNamNumber.aspx" />
-    <Content Include="Views\Home\NamsByNumber2.ascx" />
     <Content Include="Views\Home\Vlans.aspx" />
-    <Content Include="Views\Shared\ToolbarWithBack.ascx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

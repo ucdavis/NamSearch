@@ -5,7 +5,7 @@
 <!DOCTYPE html> 
 <html> 
 	<head> 
-	<title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+	<title><asp:ContentPlaceHolder ID="PageTitle" runat="server">Nam Search</asp:ContentPlaceHolder></title>
 
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.css" />
 	<script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
@@ -17,7 +17,7 @@
 //        google.load("jqueryui", "1.8.2");
 	</script>--%>
 	
-	<asp:ContentPlaceHolder ID="HeaderContent" runat="server">
+	<asp:ContentPlaceHolder ID="AdditionalScripts" runat="server">
 	</asp:ContentPlaceHolder>
 	
 	<% if(false){ //Load the jquery docs for intellisense %>
@@ -27,8 +27,17 @@
 </head>
 
 <body>
-		
-	   <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
 
+<div data-role="page">
+    
+    <div data-role="header">
+	    <h1><asp:ContentPlaceHolder ID="TitleContent" runat="server"></asp:ContentPlaceHolder></h1>
+        <a href="<%: Url.Action("Index", "Home") %>" data-icon="check" class="ui-btn-right">Home</a>
+    </div>
+    <div data-role="content">
+	   <asp:ContentPlaceHolder ID="MainContent" runat="server">       
+       </asp:ContentPlaceHolder>
+    </div>
+</div>
 </body>
 </html>
