@@ -23,8 +23,6 @@ namespace NamSearch.Controllers
         [HandleTransactionsManually]
         public ActionResult Index()
         {
-            ViewData["Message"] = "Welcome to ASP.NET MVC!";
-
             return View();
         }
 
@@ -38,7 +36,7 @@ namespace NamSearch.Controllers
         {
             var buildings = _dataNamQueryService.GetBuildings();
             
-            return PartialView(buildings.ToList());
+            return View(buildings.ToList());
         }
 
         public ActionResult NamsByBuilding(string name)
@@ -48,7 +46,7 @@ namespace NamSearch.Controllers
                                     .Where(x => x.Building == name)
                                     .OrderBy(x => x.Building);
 
-            return PartialView(nams.ToList());
+            return View(nams.ToList());
         }
 
         public ActionResult Departments()
