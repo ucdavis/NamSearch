@@ -6,7 +6,7 @@
 <div data-role="page">
 
 	<div data-role="header">
-		<h1>Nams For <%: Request.Params["name"] %></h1>
+		<h1>Nams For: <%: Request.Params["name"] %></h1>
 
 	</div><!-- /header -->
 

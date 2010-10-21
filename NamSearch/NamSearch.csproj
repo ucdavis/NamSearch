@@ -177,10 +177,10 @@
     <Content Include="Themes\jqt\theme.min.css" />
     <Content Include="Views\Home\Buildings.aspx" />
     <Content Include="Views\Home\Departments.ascx" />
-    <Content Include="Views\Home\DisplayNam.ascx" />
+    <Content Include="Views\Home\DisplayNam.aspx" />
+    <Content Include="Views\Home\DisplayNam2.ascx" />
     <Content Include="Views\Home\ListNams.ascx" />
     <Content Include="Views\Home\NamsByBuilding.aspx" />
-    <Content Include="Views\Home\NamsByBuilding2.ascx" />
     <Content Include="Views\Home\NamsByDepartment.ascx" />
     <Content Include="Views\Home\NamsByVlan.ascx" />
     <Content Include="Views\Home\SearchByNamNumber.ascx" />
