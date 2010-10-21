@@ -53,7 +53,7 @@ namespace NamSearch.Controllers
         {
             var departments = _dataNamQueryService.GetDepartments();
 
-            return PartialView(departments.ToList());
+            return View(departments.ToList());
 
         }
 
@@ -64,14 +64,14 @@ namespace NamSearch.Controllers
                                     .Where(x => x.Department == name)
                                     .OrderBy(x => x.Department);
 
-            return PartialView(nams.ToList());
+            return View(nams.ToList());
         }
 
         public ActionResult Vlans()
         {
             var vlans = _dataNamQueryService.GetVlans();
 
-            return PartialView(vlans.ToList());
+            return View(vlans.ToList());
 
         }
 
@@ -82,7 +82,7 @@ namespace NamSearch.Controllers
                                     .Where(x => x.Vlan == name)
                                     .OrderBy(x => x.Vlan);
 
-            return PartialView(nams.ToList());
+            return View(nams.ToList());
         }
 
         [HandleTransactionsManually]
