@@ -178,7 +178,6 @@
     <Content Include="Views\Home\Buildings.ascx" />
     <Content Include="Views\Home\Departments.ascx" />
     <Content Include="Views\Home\DisplayNam.ascx" />
-    <Content Include="Views\Home\Info.ascx" />
     <Content Include="Views\Home\ListNams.ascx" />
     <Content Include="Views\Home\NamsByBuilding.ascx" />
     <Content Include="Views\Home\NamsByDepartment.ascx" />

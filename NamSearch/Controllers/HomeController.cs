@@ -29,12 +29,6 @@ namespace NamSearch.Controllers
         }
 
         [HandleTransactionsManually]
-        public ActionResult Info()
-        {
-            return PartialView("Info");
-        }
-
-        [HandleTransactionsManually]
         public ActionResult About()
         {
             return View();

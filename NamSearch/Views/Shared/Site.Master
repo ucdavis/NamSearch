@@ -2,52 +2,33 @@
 <%@ Import Namespace="Telerik.Web.Mvc.UI" %>
 <%@ Import Namespace="NamSearch.Controllers" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head id="Head1" runat="server">
-    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
-        
-    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
-    <script type="text/javascript">
-        google.load("jquery", "1.4.2");
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0a1/jquery.mobile-1.0a1.min.js"></script>
+		
+<%--    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+	<script type="text/javascript">
+		google.load("jquery", "1.4.3");
 //        google.load("jqueryui", "1.8.2");
-    </script>
-    
-    <script src="<%= Url.Script("jqtouch.min.js") %>" type="application/x-javascript" charset="utf-8"></script>
-    <style type="text/css" media="screen">@import "Content/jqtouch.min.css";</style>
-    <style type="text/css" media="screen">@import "Themes/jqt/theme.min.css";</style>
-    
-    <asp:ContentPlaceHolder ID="HeaderContent" runat="server">
-    </asp:ContentPlaceHolder>
-    
-    <% if(false){ //Load the jquery docs for intellisense %>
-        <script src="../../Scripts/jquery-1.4.1-vsdoc.js" type="text/javascript"></script>
-    <%} %>
-
-    <script type="text/javascript">
-        $.jQTouch({
-            //icon: 'jqtouch.png',
-            statusBar: 'black-translucent',
-            preloadImages: [
-                    'themes/jqt/img/chevron_white.png',
-                    'themes/jqt/img/bg_row_select.gif',
-                    'themes/jqt/img/back_button_clicked.png',
-                    'themes/jqt/img/button_clicked.png'
-                ]
-        });
-
-        $(function () {
-            $('.home').tap(function () {
-                debugger;
-            });
-        });
-    </script>
+	</script>--%>
+	
+	<asp:ContentPlaceHolder ID="HeaderContent" runat="server">
+	</asp:ContentPlaceHolder>
+	
+	<% if(false){ //Load the jquery docs for intellisense %>
+		<script src="../../Scripts/jquery-1.4.1-vsdoc.js" type="text/javascript"></script>
+	<%} %>
 
 </head>
 
 <body>
-        
-       <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+		
+	   <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
 
 </body>
 </html>
