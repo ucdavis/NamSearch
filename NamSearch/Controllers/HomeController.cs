@@ -88,7 +88,7 @@ namespace NamSearch.Controllers
         [HandleTransactionsManually]
         public ActionResult SearchByNamNumber()
         {
-            return PartialView();
+            return View();
         }
 
         public ActionResult NamsByNumber(string number)
@@ -97,7 +97,7 @@ namespace NamSearch.Controllers
                 .Where(x => x.NamNumber.Contains(number))
                 .OrderBy(x => x.NamNumber);
 
-            return PartialView(nams.ToList());
+            return View(nams.ToList());
         }
 
         public ActionResult DisplayNam(Guid id)

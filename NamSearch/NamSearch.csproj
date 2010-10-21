@@ -181,9 +181,10 @@
     <Content Include="Views\Home\ListNams.ascx" />
     <Content Include="Views\Home\NamsByBuilding.aspx" />
     <Content Include="Views\Home\NamsByDepartment.aspx" />
+    <Content Include="Views\Home\NamsByNumber.aspx" />
     <Content Include="Views\Home\NamsByVlan.aspx" />
-    <Content Include="Views\Home\SearchByNamNumber.ascx" />
-    <Content Include="Views\Home\NamsByNumber.ascx" />
+    <Content Include="Views\Home\SearchByNamNumber.aspx" />
+    <Content Include="Views\Home\NamsByNumber2.ascx" />
     <Content Include="Views\Home\Vlans.aspx" />
     <Content Include="Views\Shared\ToolbarWithBack.ascx" />
     <Content Include="Web.config" />
