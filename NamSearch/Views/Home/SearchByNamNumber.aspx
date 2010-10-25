@@ -1,6 +1,6 @@
 <%@ Page Title="" Language="C#" Inherits="System.Web.Mvc.ViewPage" MasterPageFile="~/Views/Shared/Site.Master" %>
 <asp:Content runat="server" ID="Title" ContentPlaceHolderID="TitleContent">
-Search By NAM Number
+Search
 </asp:Content>
 <asp:Content runat="server" ID="Main" ContentPlaceHolderID="MainContent">
 		

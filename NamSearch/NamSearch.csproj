@@ -150,14 +150,34 @@
     <Compile Include="Services\DataNamQueryService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\jqtouch.min.css" />
-    <Content Include="Content\telerik.common.css" />
-    <Content Include="Content\telerik.vista.css" />
+    <Content Include="Css\jqtouch.min.css" />
+    <Content Include="Css\telerik.common.css" />
+    <Content Include="Css\telerik.vista.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Css\images\ajax-loader.gif" />
+    <Content Include="Css\images\ajax-loader.png" />
+    <Content Include="Css\images\form-check-off.png" />
+    <Content Include="Css\images\form-check-on.png" />
+    <Content Include="Css\images\form-radio-off.png" />
+    <Content Include="Css\images\form-radio-on.png" />
+    <Content Include="Css\images\icon-arrow-white-down.png" />
+    <Content Include="Css\images\icon-arrow-white-left.png" />
+    <Content Include="Css\images\icon-arrow-white-right.png" />
+    <Content Include="Css\images\icon-arrow-white-up.png" />
+    <Content Include="Css\images\icon-delete.png" />
+    <Content Include="Css\images\icon-minus-white.png" />
+    <Content Include="Css\images\icon-plus-white.png" />
+    <Content Include="Css\images\icon-search-black.png" />
+    <Content Include="Css\images\icons-18-black.png" />
+    <Content Include="Css\images\icons-18-white.png" />
+    <Content Include="Css\images\icons-36-black.png" />
+    <Content Include="Css\images\icons-36-white.png" />
     <Content Include="Scripts\jqtouch.js" />
     <Content Include="Scripts\jqtouch.min.js" />
     <Content Include="Scripts\jqtouch.transitions.js" />
+    <Content Include="Css\jquery.mobile-1.0a1.min.css" />
+    <Content Include="Scripts\jquery.mobile-1.0a1.min.js" />
     <Content Include="Scripts\xVal.jquery.validate.js" />
     <Content Include="Themes\jqt\img\back_button.png" />
     <Content Include="Themes\jqt\img\back_button_clicked.png" />
@@ -192,7 +212,7 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Content\Site.css" />
+    <Content Include="Css\Site.css" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />

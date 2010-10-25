@@ -2,7 +2,7 @@
 <%@ Import Namespace="NamSearch.Controllers" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-	Welcome To Nam Search
+	Nam Search
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
