@@ -65,8 +65,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\TechContact.cs" />
+    <Compile Include="Domain\Vlan.cs" />
     <Compile Include="Domain\DataNam.cs" />
     <Compile Include="Mappings\DataNamMap.cs" />
+    <Compile Include="Mappings\TechContactMap.cs" />
+    <Compile Include="Mappings\VlanMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

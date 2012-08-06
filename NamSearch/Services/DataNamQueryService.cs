@@ -1,16 +1,18 @@
+using System;
 using System.Linq;
+using NamSearch.Core.Domain;
 using NamSearch.Helpers;
 using NHibernate.Linq;
 using UCDArch.Core.PersistanceSupport;
-using NamSearch.Core.Domain;
-using System;
 
 namespace NamSearch.Services
 {
     public interface IDataNamQueryService
     {
         IQueryable<string> GetBuildings();
+
         IQueryable<string> GetDepartments();
+
         IQueryable<string> GetVlans();
     }
 
@@ -33,9 +35,9 @@ namespace NamSearch.Services
             return _dataNamRepository.Queryable.Cache().OrderBy(x => x.Department).Select(x => x.Department).Distinct();
         }
 
-        public IQueryable<string> GetVlans()
+        public IQueryable<String> GetVlans()
         {
-            return _dataNamRepository.Queryable.Cache().OrderBy(x => x.Vlan).Select(x => x.Vlan).Distinct();
+            return _dataNamRepository.Queryable.Cache().OrderBy(x => x.Vlan.Name).Select(x => x.Vlan.Name).Distinct();
         }
     }
 }

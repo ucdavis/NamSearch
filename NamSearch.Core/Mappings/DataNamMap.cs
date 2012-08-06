@@ -10,13 +10,14 @@ namespace NamSearch.Core.Mappings
             ReadOnly();
 
             Id(x => x.Id).GeneratedBy.Guid();
-            
+
             Map(x => x.NamNumber);
             Map(x => x.Department);
             Map(x => x.Status);
             Map(x => x.Building);
             Map(x => x.Room);
-            Map(x => x.Vlan);
+            //Map(x => x.Vlan);
+            References(x => x.Vlan, "Vlan").ForeignKey("Name");
 
             Cache.ReadOnly();
         }

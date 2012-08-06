@@ -1,10 +1,10 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using System.Web.Mvc;
 using NamSearch.Core.Domain;
-using UCDArch.Core.PersistanceSupport;
-using System;
-using UCDArch.Web.Attributes;
 using NamSearch.Services;
+using UCDArch.Core.PersistanceSupport;
+using UCDArch.Web.Attributes;
 
 namespace NamSearch.Controllers
 {
@@ -12,12 +12,14 @@ namespace NamSearch.Controllers
     public class HomeController : ApplicationController
     {
         private readonly IRepositoryWithTypedId<DataNam, Guid> _dataNamRepository;
+        private readonly IRepositoryWithTypedId<Vlan, string> _vlanRepository;
         private readonly IDataNamQueryService _dataNamQueryService;
 
-        public HomeController(IRepositoryWithTypedId<DataNam, Guid> dataNamRepository, IDataNamQueryService dataNamQueryService)
+        public HomeController(IRepositoryWithTypedId<DataNam, Guid> dataNamRepository, IDataNamQueryService dataNamQueryService, IRepositoryWithTypedId<Vlan, string> vlanRepository)
         {
             _dataNamRepository = dataNamRepository;
             _dataNamQueryService = dataNamQueryService;
+            _vlanRepository = vlanRepository;
         }
 
         [HandleTransactionsManually]
@@ -35,7 +37,7 @@ namespace NamSearch.Controllers
         public ActionResult Buildings()
         {
             var buildings = _dataNamQueryService.GetBuildings();
-            
+
             return View(buildings.ToList());
         }
 
@@ -54,7 +56,6 @@ namespace NamSearch.Controllers
             var departments = _dataNamQueryService.GetDepartments();
 
             return View(departments.ToList());
-
         }
 
         public ActionResult NamsByDepartment(string name)
@@ -72,15 +73,14 @@ namespace NamSearch.Controllers
             var vlans = _dataNamQueryService.GetVlans();
 
             return View(vlans.ToList());
-
         }
 
         public ActionResult NamsByVlan(string name)
         {
             var nams =
                 _dataNamRepository.Queryable
-                                    .Where(x => x.Vlan == name)
-                                    .OrderBy(x => x.Vlan);
+                                    .Where(x => x.Vlan.Name == name)
+                                    .OrderBy(x => x.Vlan.Name);
 
             return View(nams.ToList());
         }
@@ -102,9 +102,17 @@ namespace NamSearch.Controllers
 
         public ActionResult DisplayNam(Guid id)
         {
-            var nam = _dataNamRepository.GetById(id);
+            var nam = _dataNamRepository.GetNullableById(id);
 
             return View(nam);
+        }
+
+        public ActionResult DisplayContact(string id)
+        {
+            var vlan =
+                _vlanRepository.GetNullableById(id);
+
+            return View(vlan);
         }
     }
 }
