@@ -214,7 +214,6 @@
     <Content Include="Views\Home\NamsByNumber.aspx" />
     <Content Include="Views\Home\NamsByVlan.aspx" />
     <Content Include="Views\Home\SearchByNamNumber.aspx" />
-    <Content Include="Views\Home\TestView.aspx" />
     <Content Include="Views\Home\Vlans.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
