@@ -21,15 +21,19 @@
                     <%:(String.IsNullOrEmpty(contact.Name) ? String.Empty : contact.Name)%></span></h4>
             <h4 class="info">
                 <strong>Phone: </strong><span>
-                    <%:(String.IsNullOrEmpty(contact.Phone) ? String.Empty : String.Format(new PhoneFormatter(), "{0:(###) ###-####}", contact.Phone))%></span></h4>
+                    <%:(String.IsNullOrEmpty(contact.Phone) ? String.Empty : String.Format(new PhoneFormatter(), "{0:(###) ###-####}", contact.Phone))%></span><% if (!String.IsNullOrEmpty(contact.Email))
+                                                                                                                                                                  {%>
+                <p class="ui-li-aside">
+                    <span><i>(Write e-mail)</i></span>
+                </p>
+                <% } %></h4>
             <h4 class="info">
-                <strong>Email: </strong><span>
-                    <% if (!String.IsNullOrEmpty(contact.Email))
-                       {%>
-                    <a href="mailto: <%:contact.Email %>">
-                        <%: contact.Email%></a>
-                    <% } %>
-                </span>
+                <strong>Email: </strong>
+                <% if (!String.IsNullOrEmpty(contact.Email))
+                   {%>
+                <span><a href="mailto: <%:contact.Email %>">
+                    <%: contact.Email%></a></span>
+                <% } %>
             </h4>
         </li>
         <% } %>

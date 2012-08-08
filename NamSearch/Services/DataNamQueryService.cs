@@ -27,12 +27,12 @@ namespace NamSearch.Services
 
         public IQueryable<string> GetBuildings()
         {
-            return _dataNamRepository.Queryable.Cache().OrderBy(x => x.Building).Select(x => x.Building).Distinct();
+            return _dataNamRepository.Queryable.Cache().Where(x => x.Building != null).OrderBy(x => x.Building).Select(x => x.Building).Distinct();
         }
 
         public IQueryable<string> GetDepartments()
         {
-            return _dataNamRepository.Queryable.Cache().OrderBy(x => x.Department).Select(x => x.Department).Distinct();
+            return _dataNamRepository.Queryable.Cache().Where(x => x.Department != null).OrderBy(x => x.Department).Select(x => x.Department).Distinct();
         }
 
         public IQueryable<String> GetVlans()
