@@ -36,8 +36,11 @@ namespace NamSearch.Controllers
             var vlans = _vlanRepository.GetAll();
             var departments = _dataNamQueryService.GetDepartments();
 
+            // Couldn't get straight-up ILists<string> to bind correctly to
+            // drop-down lists, so added code that changed them to dictionaries, which works correctly.
             viewModel.Buildings = buildings.ToDictionary(v => v, v => v);
             viewModel.Departments = departments.ToDictionary(v => v, v => v);
+
             viewModel.Vlans = vlans;
             return View(viewModel);
         }
@@ -128,6 +131,16 @@ namespace NamSearch.Controllers
             return View(vlan);
         }
 
+        /// <summary>
+        /// "Anding" NAM search logic requested by Tom Pomroy.
+        /// Uses predicate builder to keep query logic as simple and straight forward as possible.
+        /// </summary>
+        /// <param name="namNumber"></param>
+        /// <param name="roomNumber"></param>
+        /// <param name="vlan"></param>
+        /// <param name="building"></param>
+        /// <param name="department"></param>
+        /// <returns></returns>
         public ActionResult NamsBySearchParams(string namNumber, string roomNumber, string vlan, string building, string department)
         {
             var hasNamNumber = !(String.IsNullOrEmpty(namNumber) || namNumber.Equals("0"));
