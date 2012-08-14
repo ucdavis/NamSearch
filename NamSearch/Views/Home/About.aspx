@@ -5,5 +5,5 @@
 </asp:Content>
 
 <asp:Content ID="aboutContent" ContentPlaceHolderID="MainContent" runat="server">
-	<h2 class="info">This application was developed by the awesome Scott Kirkland.</h2>
+	<h2 style="text-align: center;" class="info">This application was developed by the awesome Scott Kirkland, with modifications by Ken Taylor for the addition of the "Find a NAM" search feature and VLAN contacts information page.</h2>
 </asp:Content>
