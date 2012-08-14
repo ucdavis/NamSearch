@@ -3,8 +3,7 @@
 
 <%@ Import Namespace="NamSearch.Helpers" %>
 <asp:Content runat="server" ID="Title" ContentPlaceHolderID="TitleContent">
-    Technical Contacts For Vlan:
-    <%: Model.Name %>
+    <%: Model.Name %> Contacts:
 </asp:Content>
 <asp:Content runat="server" ID="Main" ContentPlaceHolderID="MainContent">
     <%if (Model != null)
