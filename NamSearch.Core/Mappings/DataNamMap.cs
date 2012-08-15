@@ -18,6 +18,8 @@ namespace NamSearch.Core.Mappings
             Map(x => x.Room);
             //Map(x => x.Vlan);
             References(x => x.Vlan, "Vlan").ForeignKey("Name");
+            Map(x => x.BillingId);
+            Map(x => x.PortNumber);
 
             Cache.ReadOnly();
         }

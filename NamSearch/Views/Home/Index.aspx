@@ -60,37 +60,55 @@
                 </div>
             </fieldset>
             <div>
-                <input type="submit" value="Search*" onclick="javascript: submitForm();" />
-                <i>*Note: Only NAMs matching ALL search parameters will be returned!</i><input type="reset"
-                    value="Reset Form" onclick="javascript: resetForm(this);" />
+                <input id="findNams" type="submit" value="Search*"/>
+                <i>*Note: Only NAMs matching ALL search parameters will be returned!</i><input type="reset" id="resetForm"
+                    value="Reset Form" />
             </div>
             <% } %>
         </li>
     </ul>
     <script type="text/javascript">
-        function submitForm() {
-            // For some wacked reason the built-in form submit was not firing, so I needed to
-            // add this javascript/jQuery submit to get it to happen.
+        $(function () {
+            $('#findNams').click(function () {
+                var hasInputValues = false;
+                var inputs = $('form input[type="text"], form select');
 
-            $('form').submit();
-        }
-        function resetForm(e) {
-            // This jQuery handles resetting/clearing out all of the form fields:
-            //debugger;
-            // reset all text fields in the form:
-            $('form input[type="text"]').val("");
+                for (var i = 0; i < inputs.length; i++) {
+                    var inputVal = $(inputs[i]).val();
+                    if (inputVal != null && inputVal != "") {
+                        hasInputValues = true;
+                        break;
+                    }
+                }
 
-            // reset ALL the select lists on the form:
-            var select = $('form select');
-            select.val($('option:first', select).val());
+                if (hasInputValues) {
+                    $('form').submit();
+                    return false;
+                }
+                else {
+                    alert("You must enter or select at least 1 search parameter.");
+                    return false;
+                }
+            });
+            
+            $('#resetForm').click(function() {
+                // This jQuery handles resetting/clearing out all of the form fields:
+                //debugger;
+                // reset all text fields in the form:
+                $('form input[type="text"]').val("");
 
-            // Need this line in order to avoid
-            //"uncaught exception: cannot call methods on selectmenu prior to initialization; attempted to call method 'refresh'" exception.
-            select.selectmenu();  // Need to initialize selectmenu before calling refresh.  See above.
+                // reset ALL the select lists on the form:
+                var select = $('form select');
+                select.val($('option:first', select).val());
 
-            // This is the key: We have to do a refresh to get  jQuery mobile's text button text to sync up with the same value
-            // as the hidden select lists'.
-            select.selectmenu("refresh");
-        }
+                // Need this line in order to avoid
+                //"uncaught exception: cannot call methods on selectmenu prior to initialization; attempted to call method 'refresh'" exception.
+                select.selectmenu();  // Need to initialize selectmenu before calling refresh.  See above.
+
+                // This is the key: We have to do a refresh to get  jQuery mobile's text button text to sync up with the same value
+                // as the hidden select lists'.
+                select.selectmenu("refresh");
+            });
+        });
     </script>
 </asp:Content>

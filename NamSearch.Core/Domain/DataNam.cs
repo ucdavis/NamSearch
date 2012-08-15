@@ -17,5 +17,9 @@ namespace NamSearch.Core.Domain
 
         //public virtual string Vlan { get; set; }
         public virtual Vlan Vlan { get; set; }
+
+        public virtual string BillingId { get; set; }
+
+        public virtual string PortNumber { get; set; }
     }
 }

@@ -187,8 +187,13 @@ namespace NamSearch.Controllers
                     .Where(NamSearchExpression)
                     .OrderBy(t => t.NamNumber)
                     .ToList();
+
+                return View(retval);
             }
-            return View(retval);
+            else
+            {
+                return RedirectToAction("Index");
+            }
         }
     }
 }
